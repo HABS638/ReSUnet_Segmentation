@@ -1,0 +1,13 @@
+numpy
+scipy
+tensorflow>=2.10
+keras
+pillow
+matplotlib
+nibabel
+pydicom
+higra
+scikit-image
+tqdm
+pandas
+opencv-python
