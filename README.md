@@ -1,12 +1,11 @@
 # ReSUnet_Segmentation
 
 ## Présentation
-Projet étudiant de segmentation d'images médicales utilisant une architecture **ReSUnet** (U-Net avec blocs résiduels). Le notebook principal inclut la préparation des données (LiTS2017, LIDC-IDRI via Kaggle), la définition du modèle, l'entraînement et l'évaluation des performances ainsi que des visualisations des masques prédits.
+Projet de segmentation d'images médicales utilisant une architecture **ReSUnet** (U-Net avec blocs résiduels). Le notebook principal inclut la préparation des données (LiTS2017, LIDC-IDRI via Kaggle), la définition du modèle, l'entraînement et l'évaluation des performances ainsi que des visualisations des masques prédits.
 
 ## Objectifs
 - Implémenter et entraîner un modèle ReSUnet pour la segmentation d'organes/tumeurs.
-- Comparer les résultats visuels et quantitatives (ex. Dice, IoU) sur des échantillons de validation.
-- Fournir un code structuré et reproductible pour usage pédagogique.
+- Comparer les résultats visuels et quantitatives (Dice, IoU) sur des échantillons de validation.
 
 ## Contenu du dépôt
 ```
@@ -15,12 +14,12 @@ ReSUnet_Segmentation/
 ├── requirements.txt
 ├── notebooks/               # notebook principal (nettoyé)
 ├── src/                     # scripts Python réutilisables
-├── images/examples/         # images d'exemple (entrée / vérité terrain / prédiction)
+├── images/examples/         # images d'exemple (entrée / prédiction)
 └── reports/                 # résumé des résultats
 ```
 
 ## Installation
-1. Créer un environnement Python (recommandé : venv ou conda)
+1. Créer un environnement Python (venv ou conda)
 ```bash
 python -m venv venv
 source venv/bin/activate  # ou `venv\Scripts\activate` sous Windows
@@ -36,7 +35,7 @@ pip install -r requirements.txt
 - Pour lancer l'inférence : `python src/inference.py --model checkpoints/model_last.h5 --input examples/input.png`
 
 ## Metrics 
-- Dice coefficient, IoU (Jaccard), précision/recall par classe.
-- Visualiser courbes loss & metric pendant l'entraînement.
+- Dice coefficient, IoU, précision/recall par classe.
+- Visualisation des courbes loss & metric pendant l'entraînement.
 
 
