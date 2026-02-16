@@ -1,7 +1,12 @@
 # ReSUnet_Segmentation
 
 ## Présentation
-Projet de segmentation d'images médicales utilisant une architecture **ReSUnet** (U-Net avec blocs résiduels). Le notebook principal inclut la préparation des données (LiTS2017, LIDC-IDRI via Kaggle), la définition du modèle, l'entraînement et l'évaluation des performances ainsi que des visualisations des masques prédits.
+
+Ce projet propose une approche innovante combinant **apprentissage auto-supervisé (SSL)** et **morphologie mathématique** pour réduire la dépendance aux données annotées en imagerie médicale.
+
+La méthode s’appuie sur la représentation **Max-Tree** afin de capturer l’information structurelle des images (aire, contraste, volume) et de concevoir des tâches prétextes permettant aux CNN d’apprendre des représentations plus pertinentes.
+
+Les résultats montrent une amélioration significative des performances de segmentation, démontrant l’intérêt d’intégrer des connaissances structurelles dans les pipelines de deep learning.
 
 ## Objectifs
 - Implémenter et entraîner un modèle ReSUnet pour la segmentation d'organes/tumeurs.
