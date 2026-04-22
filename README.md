@@ -2,7 +2,7 @@
 
 > **94.27% Dice** on liver segmentation · **+10 points** with only 10% labeled data · Colab-ready
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/ReSUNet_Segmentation/blob/main/notebooks/ReSUnet_segmentation.ipynb)
+[![Open In Colab](https://colab.research.google.com/drive/1PFOtzEb1-qDZmfbm-EYEd20wsh7tkBWM?usp=sharing)
 
 ---
 
